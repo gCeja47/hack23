@@ -1,0 +1,130 @@
+/* for the Hackathon
+by: Gracie Ceja
+last modified: April 15, 2023 */
+
+/* variables section */
+:root {
+    --text-color: #FF16A8;
+    --accent-color: #44F900;
+}
+  
+
+body{
+    color: var(--text-color);
+    background-color: white;
+    font-size: 1.1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+}
+
+
+
+
+/* navigation bar styling */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 0.1em solid black;
+    margin-bottom: 1em;
+    padding: 0.4em;
+    background-color: var(--accent-color);
+}
+nav a{
+    display: inline-block;
+    font-size: 1.7em;
+    text-decoration: none; /* no underline */
+}
+/* end of nav bar section */
+
+
+/* logo image on homepage */
+img.floatright{
+    float: right;
+    width: 15em;
+    height: 15em;
+    margin-bottom: 3em;
+}
+
+
+/* form section */
+form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+input[type="submit"]{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+}
+.flexform{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+form div{
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+/* end of form section */
+
+
+
+/* for displaying time on profiles.php, to make it stand out */
+.time{
+    font-size: 1.1em;
+    text-shadow: 1px 1px 5px #16b907; /* horizontal, vertical, blur, & color (green) */
+}
+
+
+
+/* table section */
+/* give the table a nice border */
+table, tr, th, td{
+    border-collapse: collapse;
+    border: thin solid black;
+}
+th, td{
+    padding: 0.5em;
+}
+table{
+    margin: 1em;
+}
+/* end of table section */
+
+
+
+/* for profiles list */
+/* entire list */
+ul.profiles{
+    list-style-type: none;
+}
+/* individual user profiles */
+ul.user{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border: thick solid black;
+    margin: 1em;
+}
+/* data in the profile */
+.user li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 1em;
+    border: thin solid black;
+    padding: 1em;
+}
+/* user profile pics */
+.userimg{
+    display: inline-block;
+    border-radius: 0.1em;
+    width: 5em;
+    height: 5em;
+}
+/* end profiles list section */
